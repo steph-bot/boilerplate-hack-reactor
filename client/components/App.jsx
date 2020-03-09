@@ -1,9 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
-const App = () => {
+const App = ({ /* PROPS */ }) => {
   return (
     <div>I have rendered.</div>
   )
 };
 
-export default App;
+const mapStateToProps = (state) => {
+  //
+};
+
+const mapDispatchToProps = (dispatch) => {
+  //
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
